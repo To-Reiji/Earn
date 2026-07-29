@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> for kon narak</title>
+<style>
+    body {
+        background-color: #ffedff;
+    }
+    h1 {
+        
+        margin-top: 150px;
+        text-align: center;
+        font-size: 80px;
+        color: #ff9cf8;
+    }
+    .container {
+        text-align: center;
+        margin: 0px auto 0px auto;
+    }
+    .B1 {
+        margin: 30px 75px auto 0;
+        font-size: 35px;
+        text-align: center;
+        background-color: #fffad4;
+        border-color: #ffc994;
+    }
+
+    .B2 {
+        margin: 0 auto auto 0;
+        font-size: 35px;
+        width: 23%;
+        background-color: #fffad4;
+        border-color: #ffc994;
+    }
+</style>
+</head>
+<body>
+    <h1>ใครเอ่ยยิ้มน่ารักที่สุดด</h1>
+<div class="container">
+    <button id="cl" class="B1" onclick="correct()">ก็ต้องเอิร์นอยู่แล้วว</button> <button class="B2" onclick="incorrect()" id="dis">ม่ายรู้ๆ</button>
+</div>   
+</body>
+<script>
+
+    function correct() {
+        
+            window.location.href ="success3.html";        
+    }
+
+    function incorrect() {
+        document.getElementById("dis").style.display = "none";
+    }
+
+</script>
+</html>

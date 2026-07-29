@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>    
+<title> for kon narak</title>
+<style>
+    body {
+        background-color: #ffedff;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    h1 {
+        
+        margin-top: 150px;
+        text-align: center;
+        font-size: 80px;
+        color: #ff9cf8;
+        
+
+    }
+    .Name {
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        margin:  -25px auto 0 auto;
+        width: 30%;
+        height: 55px;
+
+    }
+    
+    button {
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        margin: -15px auto 0 auto;
+        background-color: #fffad4;
+        border-color: #ffc994;
+        
+    }
+
+    .error{
+        display: block;
+        margin: 10px auto 0 auto;
+        text-align: center;
+        font-size: 25px;
+        color: #ffa294;
+    }
+</style> 
+</head>
+<body>
+    <h1>
+        สำหรับคนสวย
+    </h1>
+    
+    <div class="box">
+        <input type="text" class="Name" id="userInput" placeholder="ขอชื่อคนน่ารักหนึ่งคน"><br><br>
+        <button onclick="checkName()">ยืนยัน</button>
+        
+        <p class = "error" id="errorName"></p> 
+    </div>
+
+    <script>
+        function checkName() {
+            let inputval = document.getElementById("userInput").value;
+
+            let correctName = ["Earn", "earn", "เอิร์น", "เอิน"];
+
+            if (correctName.includes(inputval)) {
+                window.location.href = "success.html";
+            } else {
+                document.getElementById("errorName").innerText = "ใช่รึป่าวนะะ";
+            }
+        }
+    </Script>
+</body>
+</html>
