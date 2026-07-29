@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>for kon narak</title>
+<style>
+    body {
+        background-color: #ffedff;
+    }
+    h1  {
+        margin-top: 150px;
+        text-align: center;
+        font-size: 80px;
+        color: #ff9cf8;
+            }
+    
+    .B1 {
+        margin: 30px 75px auto 285px;
+        font-size: 50px;
+        width: 23%;
+        background-color: #fffad4;
+        border-color: #ffc994;
+    } 
+
+    .B2 {
+        margin: 0 auto auto 50px;
+        font-size: 50px;
+        background-color: #fffad4;
+        border-color: #ffc994;
+    }
+
+    .error {
+        display: block;
+        margin: 30px auto auto auto;
+        text-align: center;
+        font-size: 36px;
+        color: #ffa294;
+    }
+</style>
+</head>
+<body>
+    <h1>ใครเอ่ยน่ารักที่สุด?</h1>
+    <div>
+    <button class = "B1" onclick="check()">เอิร์นไงง</button> <button class="B2" onclick="checkerror()">แมวแถวบ้าน</button>
+    
+    <p class="error" id="incorrect"></p>
+    </div>
+
+    <script>
+        let message = [
+            "",
+            "อาจจะยังน้าา",
+            "ไม่ใช่ๆ",
+            "ก็บอกว่าไม่ใช่ไงง",
+            "แหนะบอกไม่ฟังอีก",
+            "กดปุ่มซ้ายสิ"
+        ];
+
+        let currentnum = 0;
+
+        function check() {
+            window.location.href ="success2.html"
+        }
+        
+        function checkerror() {
+            currentnum++;
+            if (currentnum >= message.length) {
+                currentnum = 1;
+            }
+            document.getElementById("incorrect").innerText =message[currentnum];
+            //document.getElementById("incorrect").innerText ="ไม่ใช่ๆ"
+        }
+    </script>
+</body>
+</html>
