@@ -4,54 +4,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title> for kon narak</title>
 <style>
-    body {
+   html, body {
         background-color: #ffedff;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    h1 {
-        
-        margin-top: 150px;
-        text-align: center;
-        font-size: 80px;
-        color: #ff9cf8;
-    }
-
+    
     .container {
-        margin: 100px auto 0px auto;
-        display: block;
+        width: 100%;
         text-align: center;
     }
 
-    .B1 {
-        font-size: 35px;
-        margin: 0px auto 0px auto;
-        width: 18%;
+    .B1, .B2, .B3, .B4 {
+        font-size: 20px;
         background-color: #fffad4;
-        border-color: #ffc994;
+        border-radius: 8px;
+        cursor: pointer;
+        border: 2px solid #ffc994;
+        padding: 10px 0; /* ใช้ padding บน-ล่างซ้าย-ขวาเป็น 0 เพื่อคุมความกว้างด้วย width */
+        width: 220px;    /* กำหนดความกว้างตายตัว ปุ่มจะเท่ากันเป๊ะ */
+        display: inline-block;
+        text-align: center;    
     }
 
-    .B2 {
-        font-size: 35px;
-        margin: 0px 50px 0px 50px;
-        width: 18%;
-        background-color: #fffad4;
-        border-color: #ffc994;
-    }
-
-    .B3 {
-        font-size: 35px;
-        margin: 0px 50px 0px auto;
-        width: 18%;
-        background-color: #fffad4;
-        border-color: #ffc994;
-    }
-
-    .B4 {
-        font-size: 35px;
-        margin: 0px auto 0px auto;
-        width: 18%;
-        background-color: #fffad4;
-        border-color: #ffc994;
-    }
+   
 </style>
 </head>
 <body>
