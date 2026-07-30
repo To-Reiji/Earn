@@ -3,31 +3,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title> for kon narak</title>
 <style>
-    body {
+    html, body {
         background-color: #ffedff;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
+    .box {
+        text-align: center;
+        width: 100%;
+    }
+    
     h1 {
-        
-        margin-top: 150px;
+        margin: 0 0 20px 0;
         text-align: center;
-        font-size: 65px;
+        font-size: 45px; 
         color: #ff9cf8;
+        padding: 0 15px;
     }
+
     button {
-        display: block;
-        text-align: center;
-        margin: 60px auto 0 auto;
-        font-size: 45px;
+        font-size: 25px;
         background-color: #fffad4;
-        border-color: #ffc994;
+        border-radius: 8px;
+        cursor: pointer;
+        border: 2px solid #ffc994;
+        padding: 10px 0; /* ใช้ padding บน-ล่างซ้าย-ขวาเป็น 0 เพื่อคุมความกว้างด้วย width */
+        width: 220px;    /* กำหนดความกว้างตายตัว ปุ่มจะเท่ากันเป๊ะ */
+        display: inline-block;
+        text-align: center;
     }
 
 </style>
 </head>
 <body>
     <h1>ต้องยิ้มหวานให้ดูก่อนถึงจะไปต่อได้</h1>
-
+    <div class="box">
     <button onclick="correct()">โอ้ยยยย5555</button>
+    </div>
 </body>
 <script>
     function correct() {
