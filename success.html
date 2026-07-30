@@ -18,40 +18,37 @@
     }
     .box {
         text-align: center;
+        text-align: center;
         width: 100%
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex: wrap;
+        padding: 0 20px
+        box-sizing: border-box
     }
     h1  {
-        margin: 0 0 10px 0;
+        margin: 0 0 20px 0;
         text-align: center;
-        font-size: 50px; 
+        font-size: 45px; 
         color: #ff9cf8;
     }
     
-    .B1 {
-        display: block;
-        margin: 0 auto;
+    .B1, .B2 {
         font-size: 20px;
         background-color: #fffad4;
         border-radius: 8px;
         cursor: pointer;
         border: 2px solid #ffc994;
-    } 
-
-    .B2 {
-        display: block;
-        margin: 0 auto;
-        font-size: 20px;
-        background-color: #fffad4;
-        border-radius: 8px;
-        cursor: pointer;
-        border: 2px solid #ffc994;
+        padding: 10px 20px; /* เพิ่มพื้นที่ด้านในปุ่มให้กดง่ายขึ้นบนมือถือ */
     }
 
     .error {
-        margin: 5px auto 0 auto;
+        margin: 20px auto 0 auto;
         text-align: center;
         font-size: 18px;
         color: #ffa294;
+        width: 100%;
     }
 </style>
 </head>
