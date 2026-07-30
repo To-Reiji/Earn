@@ -31,24 +31,20 @@
         padding: 0 15px;
     }
     
-    .B1 {
+    .B1, .B2 {
         font-size: 20px;
         background-color: #fffad4;
         border-radius: 8px;
         cursor: pointer;
         border: 2px solid #ffc994;
-        padding: 10px 20px;
-        margin-right: 15px;
+        padding: 10px 0; /* ใช้ padding บน-ล่างซ้าย-ขวาเป็น 0 เพื่อคุมความกว้างด้วย width */
+        width: 220px;    /* กำหนดความกว้างตายตัว ปุ่มจะเท่ากันเป๊ะ */
+        display: inline-block;
+        text-align: center;
     }
 
-    .B2 {
-        font-size: 20px;
-        background-color: #fffad4;
-        border-radius: 8px;
-        cursor: pointer;
-        border: 2px solid #ffc994;
-        padding: 10px 20px;
-        width: 25%;
+    .B1 {
+        margin-right: 15px;
     }
 </style>
 </head>
