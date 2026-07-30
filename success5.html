@@ -30,12 +30,15 @@
     }
 
     button {
-        font-size: 20px;
+        font-size: 25px;
         background-color: #fffad4;
         border-radius: 8px;
         cursor: pointer;
         border: 2px solid #ffc994;
-        padding: 10px 20px;
+        padding: 10px 0; /* ใช้ padding บน-ล่างซ้าย-ขวาเป็น 0 เพื่อคุมความกว้างด้วย width */
+        width: 220px;    /* กำหนดความกว้างตายตัว ปุ่มจะเท่ากันเป๊ะ */
+        display: inline-block;
+        text-align: center;
     }
 
 </style>
